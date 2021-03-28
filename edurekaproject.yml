@@ -11,7 +11,7 @@
     yum: name=git state=present
   - name: build dockerfile
   - name: get the dockerfile from github
-    git: repo=https://github.com/prady12091988/EDUPROJECT/XXXXXXXXX.git dest=/gitrepo/prady
-    command: chdir=/gitrepo/prady docker build -t deployimage:devopsedu/webapp .
+    git: repo=https://github.com/prady12091988/EDUPROJECT.git dest=/tmp/gitrepo
+    command: chdir=/tmp/gitrepo/ docker build -t deployimage:devopsedu/webapp .
   - name: run the dockerfile
     command: docker run -itd -P deployimage:devopsedu/webapp .

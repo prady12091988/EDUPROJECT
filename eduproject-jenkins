@@ -7,5 +7,5 @@ sudo docker tag devopsedu/webapp pradypawar/devopsedu/webapp
 sudo docker images 
 sudo docker login
 username: Pradypawar
-password:JAKSH@2020
+password:XXXXXXXXXXX
 sudo docker push pradypawar/devopsedu/webapp
